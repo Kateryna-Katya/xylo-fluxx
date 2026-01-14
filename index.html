@@ -1,56 +1,473 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/xylo-fluxx/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инновации на пальцах — xylo-fluxx.fit</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%230062ff' /%3E%3Cstop offset='100%25' style='stop-color:%2300d4ff' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M16 2L4 9v14l12 7 12-7V9L16 2zm0 4.7L24.3 11 16 15.3 7.7 11 16 6.7zM6 21.5V12.7l9 4.8v8.8l-9-4.8zm20 0l-9 4.8v-8.8l9-4.8v8.8z' fill='url(%23g)'/%3E%3C/svg%3E" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/xylo-fluxx/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/xylo-fluxx/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/xylo-fluxx/assets/styles-BtjmRUXS.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="/" class="logo">
+          <span class="logo__text">Xylo-<span>Fluxx</span></span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav" id="nav">
+          <ul class="nav__list">
+              <li><a href="#hero" class="nav__link">Главная</a></li>
+              <li><a href="#about" class="nav__link">О платформе</a></li>
+              <li><a href="#benefits" class="nav__link">Преимущества</a></li>
+              <li><a href="#innovations" class="nav__link">Инновации</a></li>
+              <li><a href="#education" class="nav__link">Обучение</a></li>
+              <li><a href="#career" class="nav__link">Карьера</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">Начать</a>
+          <button class="burger" id="burger" aria-label="Menu">
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
 
-
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <div class="hero__bg">
+      <div class="hero__circle hero__circle--1"></div>
+      <div class="hero__circle hero__circle--2"></div>
+  </div>
+
+  <div class="container hero__container">
+      <div class="hero__content">
+          <div class="hero__badge reveal">Технология нового поколения</div>
+          <h1 class="hero__title">
+              <span class="reveal-text">Инновации</span> <br>
+              <span class="reveal-text delay-1">на пальцах</span>
+          </h1>
+          <p class="hero__description reveal delay-2">
+              Передовая цифровая инфраструктура и AI-инструменты для реальных задач.
+              Пошаговый путь в мир будущего, понятный каждому.
+          </p>
+          <div class="hero__btns reveal delay-3">
+              <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+              <a href="#about" class="btn btn--outline">Узнать детали</a>
+          </div>
+      </div>
+
+      <div class="hero__visual reveal">
+          <div class="innov-card">
+              <div class="innov-card__icon">
+                  <i data-lucide="cpu"></i>
+              </div>
+              <div class="innov-card__info">
+                  <span class="innov-card__label">Статус платформы</span>
+                  <span class="innov-card__value">Активна в Европе</span>
+              </div>
+          </div>
+          <div class="hero__image-wrapper">
+              <img src="/xylo-fluxx/assets/one-Bc0xvcwo.jpg" alt="Innovation Platform" class="hero__img">
+              <div class="hero__floating-element"></div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="container">
+      <div class="about__grid">
+          <div class="about__image-side reveal">
+              <div class="image-stack">
+                  <img src="/xylo-fluxx/assets/two-Ctu0yG7M.jpg" alt="Digital Infrastructure" class="image-stack__img image-stack__img--main">
+                  <div class="image-stack__card">
+                      <i data-lucide="zap" class="image-stack__icon"></i>
+                      <p>Решения, которые меняют правила игры</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="about__content-side">
+              <h2 class="section-title reveal">Переосмыслите подход к развитию</h2>
+              <p class="section-subtitle reveal delay-1">
+                  Мы создали платформу, где сложные AI-инструменты становятся простыми помощниками для ваших ежедневных задач.
+              </p>
+
+              <div class="features-list">
+                  <div class="feature-item reveal delay-2">
+                      <div class="feature-item__dot"></div>
+                      <div>
+                          <h4 class="feature-item__title">Технологии для реальных задач</h4>
+                          <p class="feature-item__text">Наша цифровая инфраструктура адаптируется под ваши цели, обеспечивая быстрый результат.</p>
+                      </div>
+                  </div>
+
+                  <div class="feature-item reveal delay-3">
+                      <div class="feature-item__dot"></div>
+                      <div>
+                          <h4 class="feature-item__title">Легко разобраться без опыта</h4>
+                          <p class="feature-item__text">Интуитивный интерфейс и пошаговые инструкции делают старт максимально комфортным.</p>
+                      </div>
+                  </div>
+
+                  <div class="feature-item reveal delay-4">
+                      <div class="feature-item__dot"></div>
+                      <div>
+                          <h4 class="feature-item__title">Европейское качество</h4>
+                          <p class="feature-item__text">Платформа полностью соответствует стандартам ЕС, обеспечивая безопасность ваших данных.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="benefits" id="benefits">
+  <div class="container">
+      <div class="benefits__header reveal">
+          <h2 class="section-title">Ваши возможности с Xylo-Fluxx</h2>
+          <p class="section-subtitle">Мы объединили лучшие практики и передовую цифровую инфраструктуру, чтобы вы могли построить карьеру, которая работает на вас.</p>
+      </div>
+
+      <div class="benefits__grid">
+          <div class="benefit-card reveal">
+              <div class="benefit-card__icon-box">
+                  <i data-lucide="trending-up"></i>
+              </div>
+              <h3 class="benefit-card__title">Стратегия роста</h3>
+              <p class="benefit-card__text">Инновационная технология на базе AI-инструментов помогает оценивать перспективы проекта в реальном времени.</p>
+          </div>
+
+          <div class="benefit-card reveal delay-1">
+              <div class="benefit-card__icon-box">
+                  <i data-lucide="wallet"></i>
+              </div>
+              <h3 class="benefit-card__title">Пассивный доход</h3>
+              <p class="benefit-card__text">Специальная программа пассивного дохода для активных участников образовательной экосистемы.</p>
+          </div>
+
+          <div class="benefit-card reveal delay-2">
+              <div class="benefit-card__icon-box">
+                  <i data-lucide="clock"></i>
+              </div>
+              <h3 class="benefit-card__title">Быстрый старт</h3>
+              <p class="benefit-card__text">Подключение занимает всего 2 минуты. Пошаговый путь, понятный каждому, даже без технического опыта.</p>
+          </div>
+
+          <div class="benefit-card reveal delay-3">
+              <div class="benefit-card__icon-box">
+                  <i data-lucide="shield-check"></i>
+              </div>
+              <h3 class="benefit-card__title">Надежность ЕС</h3>
+              <p class="benefit-card__text">Доступ к платформе открыт по всей Европе. Мы обеспечиваем экспертную поддержку на всех этапах.</p>
+          </div>
+      </div>
+
+      <div class="benefits__cta reveal">
+          <p>Готовы расширить горизонты своего проекта?</p>
+          <a href="#contact" class="btn btn--primary">Получить больше информации</a>
+      </div>
+  </div>
+</section>
+<section class="innovations" id="innovations">
+  <div class="container">
+      <div class="innov-grid">
+          <div class="innov-content reveal">
+              <div class="innov-tag">Digital Ecosystem</div>
+              <h2 class="section-title text-white">Технологии, которые работают на вас</h2>
+              <p class="section-subtitle text-muted">
+                  Наша платформа базируется на передовой цифровой инфраструктуре. Мы внедряем AI-инструменты для реальных задач, делая сложные процессы доступными.
+              </p>
+
+              <div class="innov-stats">
+                  <div class="stat-item">
+                      <span class="stat-item__num">99.9%</span>
+                      <span class="stat-item__label">Up-time системы</span>
+                  </div>
+                  <div class="stat-item">
+                      <span class="stat-item__num">AI-driven</span>
+                      <span class="stat-item__label">Аналитика</span>
+                  </div>
+              </div>
+
+              <ul class="innov-list">
+                  <li><i data-lucide="check-circle"></i> Проверенный партнер в сфере EdTech</li>
+                  <li><i data-lucide="check-circle"></i> Методологии, доказавшие эффективность</li>
+                  <li><i data-lucide="check-circle"></i> Поддержка 24/7 по всем вопросам</li>
+              </ul>
+          </div>
+
+          <div class="innov-visual reveal delay-2">
+              <div class="tech-stack">
+                  <div class="tech-item tech-item--1">
+                      <i data-lucide="layers"></i>
+                      <span>Архитектура</span>
+                  </div>
+                  <div class="tech-item tech-item--2">
+                      <i data-lucide="brain-circuit"></i>
+                      <span>AI Модели</span>
+                  </div>
+                  <div class="tech-item tech-item--3">
+                      <i data-lucide="database"></i>
+                      <span>Data Center</span>
+                  </div>
+                  <div class="tech-item tech-item--center">
+                      <div class="pulse-ring"></div>
+                      <i data-lucide="activity"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="education" id="education">
+  <div class="container">
+      <div class="education__header reveal">
+          <h2 class="section-title">Ваш путь в мир инноваций</h2>
+          <p class="section-subtitle">Программы, разработанные для быстрого старта. Легко разобраться без опыта, используя практики, применимые уже сегодня.</p>
+      </div>
+
+      <div class="education__grid">
+          <article class="module-card reveal">
+              <div class="module-card__image-box">
+                  <img src="/xylo-fluxx/assets/three-CbJWoRaL.jpg" alt="AI Basics" class="module-card__img">
+                  <span class="module-card__badge">Базовый уровень</span>
+              </div>
+              <div class="module-card__content">
+                  <div class="module-card__meta">
+                      <span><i data-lucide="clock"></i> 4 часа</span>
+                      <span><i data-lucide="layers"></i> 8 уроков</span>
+                  </div>
+                  <h3 class="module-card__title">AI-инструменты для жизни</h3>
+                  <p class="module-card__text">Пошаговый путь, понятный каждому: от регистрации в нейросетях до автоматизации рутинных задач.</p>
+                  <a href="#contact" class="module-card__link">Начать обучение <i data-lucide="arrow-right"></i></a>
+              </div>
+          </article>
+
+          <article class="module-card reveal delay-1">
+              <div class="module-card__image-box">
+                  <img src="/xylo-fluxx/assets/four-DTtXz2Mk.jpg" alt="Digital Assets" class="module-card__img">
+                  <span class="module-card__badge">Продвинутый</span>
+              </div>
+              <div class="module-card__content">
+                  <div class="module-card__meta">
+                      <span><i data-lucide="clock"></i> 12 часов</span>
+                      <span><i data-lucide="layers"></i> 15 уроков</span>
+                  </div>
+                  <h3 class="module-card__title">Цифровая инфраструктура</h3>
+                  <p class="module-card__text">Глубокое погружение в экосистему проекта. Узнайте, как работают технологии нового поколения изнутри.</p>
+                  <a href="#contact" class="module-card__link">Узнать детали <i data-lucide="arrow-right"></i></a>
+              </div>
+          </article>
+
+          <article class="module-card reveal delay-2">
+              <div class="module-card__image-box">
+                  <img src="/xylo-fluxx/assets/five-BXDhHpYX.jpg" alt="Monetization" class="module-card__img">
+                  <span class="module-card__badge">Бизнес</span>
+              </div>
+              <div class="module-card__content">
+                  <div class="module-card__meta">
+                      <span><i data-lucide="clock"></i> 6 часов</span>
+                      <span><i data-lucide="layers"></i> 10 уроков</span>
+                  </div>
+                  <h3 class="module-card__title">Стратегия пассивного дохода</h3>
+                  <p class="module-card__text">Практическое руководство по созданию карьеры на базе инноваций и масштабированию ваших результатов.</p>
+                  <a href="#contact" class="module-card__link">Запросить доступ <i data-lucide="arrow-right"></i></a>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+<section class="career" id="career">
+  <div class="container">
+      <div class="career__header reveal">
+          <h2 class="section-title">Постройте карьеру, которая работает на вас</h2>
+          <p class="section-subtitle">Мы предлагаем не просто знания, а готовую экосистему для профессионального роста и финансовой независимости в странах ЕС.</p>
+      </div>
+
+      <div class="career__roadmap">
+          <div class="roadmap-item reveal">
+              <div class="roadmap-item__number">01</div>
+              <div class="roadmap-item__content">
+                  <h3 class="roadmap-item__title">Освоение базы</h3>
+                  <p class="roadmap-item__text">Изучение фундаментальных AI-инструментов и подключение к цифровой инфраструктуре xylo-fluxx.fit.</p>
+              </div>
+          </div>
+
+          <div class="roadmap-item reveal delay-1">
+              <div class="roadmap-item__number">02</div>
+              <div class="roadmap-item__content">
+                  <h3 class="roadmap-item__title">Практическая адаптация</h3>
+                  <p class="roadmap-item__text">Применение технологий для решения реальных бизнес-задач и оценка перспектив вашего первого проекта.</p>
+              </div>
+          </div>
+
+          <div class="roadmap-item reveal delay-2">
+              <div class="roadmap-item__number">03</div>
+              <div class="roadmap-item__content">
+                  <h3 class="roadmap-item__title">Статус партнера</h3>
+                  <p class="roadmap-item__text">Получение экспертной поддержки и доступ к закрытым инструментам для масштабирования дохода.</p>
+              </div>
+          </div>
+
+          <div class="roadmap-item reveal delay-3">
+              <div class="roadmap-item__number">04</div>
+              <div class="roadmap-item__content">
+                  <h3 class="roadmap-item__title">Финансовая свобода</h3>
+                  <p class="roadmap-item__text">Участие в программе пассивного дохода и построение собственной сети на базе нашей платформы.</p>
+              </div>
+          </div>
+      </div>
+
+
+
+      <div class="career__footer reveal">
+          <div class="career__info-card">
+              <i data-lucide="info"></i>
+              <p>Предложение по партнерской программе активно только для резидентов и пользователей в странах Европы.</p>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="container">
+      <div class="contact__grid">
+          <div class="contact__info reveal">
+              <h2 class="section-title">Готовы начать?</h2>
+              <p class="section-subtitle">Запросите бесплатную консультацию по всем вопросам. Наши эксперты свяжутся с вами в течение 24 часов.</p>
+
+              <div class="contact__badges">
+                  <div class="c-badge">
+                      <i data-lucide="shield-check"></i>
+                      <span>Ваши данные защищены по стандартам GDPR</span>
+                  </div>
+                  <div class="c-badge">
+                      <i data-lucide="globe"></i>
+                      <span>Поддержка доступна в Италии и по всей Европе</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="contact__form-wrapper reveal delay-1">
+              <form class="form" id="mainForm">
+                  <div class="form__group">
+                      <label for="name" class="form__label">Ваше имя</label>
+                      <input type="text" id="name" class="form__input" placeholder="Введите имя" required>
+                  </div>
+
+                  <div class="form__group">
+                      <label for="email" class="form__label">Email</label>
+                      <input type="email" id="email" class="form__input" placeholder="example@domain.com" required>
+                  </div>
+
+                  <div class="form__group">
+                      <label for="phone" class="form__label">Телефон (только цифры)</label>
+                      <input type="tel" id="phone" class="form__input" placeholder="+39 XXX XXX XXXX" required>
+                  </div>
+
+                  <div class="form__group">
+                      <label class="form__label">Проверка: сколько будет <span id="captcha-question">...</span>?</label>
+                      <input type="number" id="captcha-answer" class="form__input" placeholder="Ваш ответ" required>
+                  </div>
+
+                  <div class="form__consent">
+                      <input type="checkbox" id="consent" required>
+                      <label for="consent">Я согласен на обработку <a href="./personal-data-policy.html">персональных данных</a></label>
+                  </div>
+
+                  <button type="submit" class="btn btn--primary form__submit">
+                      <span class="btn-text">Запросить доступ</span>
+                      <div class="loader"></div>
+                  </button>
+              </form>
+
+              <div class="form-success" id="formSuccess">
+                  <div class="form-success__icon">
+                      <i data-lucide="check"></i>
+                  </div>
+                  <h3>Grazie!</h3>
+                  <p>Ваша заявка успешно отправлена. Мы свяжемся с вами в ближайшее время.</p>
+                  <button class="btn btn--outline" onclick="resetForm()">Отправить еще раз</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__container">
+      <div class="footer__brand">
+          <a href="/" class="logo logo--footer">
+              <span class="logo__text">Xylo-<span>Fluxx</span></span>
+          </a>
+          <p class="footer__slogan">Технологии нового поколения, доступные каждому. Переосмыслите подход к развитию вместе с нами.</p>
+
+          <div class="footer__contacts">
+              <a href="tel:+390282950123" class="contact-item">
+                  <i data-lucide="phone" class="contact-item__icon"></i>
+                  <span>+39 02 8295 0123</span>
+              </a>
+              <a href="mailto:hello@xylo-fluxx.fit" class="contact-item">
+                  <i data-lucide="mail" class="contact-item__icon"></i>
+                  <span>hello@xylo-fluxx.fit</span>
+              </a>
+              <div class="contact-item">
+                  <i data-lucide="map-pin" class="contact-item__icon"></i>
+                  <span>Via Dante, 14, 20121 Milano MI, Italy</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="footer__nav">
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__list">
+              <li><a href="#about">О платформе</a></li>
+              <li><a href="#innovations">Инновации</a></li>
+              <li><a href="#education">Обучающие модули</a></li>
+              <li><a href="#career">Карьерный рост</a></li>
+          </ul>
+      </div>
+
+      <div class="footer__legal">
+          <h4 class="footer__title">Документация</h4>
+          <ul class="footer__list">
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="cookies.html">Cookie Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="return.html">Return Policy</a></li>
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+              <li><a href="personal-data-policy.html">Personal Data</a></li>
+          </ul>
+      </div>
+  </div>
+
+  <div class="footer__bottom">
+      <div class="container footer__bottom-content">
+          <p>&copy; 2026 Xylo-Fluxx. Все права защищены. Предложение активно в странах ЕС.</p>
+      </div>
   </div>
 </footer>
-
-
+    <div class="cookie-popup" id="cookiePopup">
+      <div class="cookie-popup__content">
+          <div class="cookie-popup__icon">
+              <i data-lucide="cookie"></i>
+          </div>
+          <p class="cookie-popup__text">
+              Этот сайт использует cookies для улучшения работы. Подробнее — в нашей
+              <a href="./cookies.html">Cookie политике</a>.
+          </p>
+          <button class="btn btn--primary btn--sm" id="acceptCookies">Принять</button>
+      </div>
+  </div>
   </body>
 </html>
